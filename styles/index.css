@@ -1,0 +1,137 @@
+@import "./global.css";
+
+/** font style**/
+.body {
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: -0.02rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.03rem;
+}
+
+.sub-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.0225rem;
+}
+
+.highlight {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.04rem;
+}
+
+.list {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: -0.0175rem;
+  opacity: 0.75;
+}
+/** layout **/
+body {
+  font-size: 1.6rem;
+  background-color: var(--Soft-Sky-Blue);
+}
+
+main {
+  overflow: hidden;
+  margin-top: 16.3rem;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  width: 63.5rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 1.5rem 3rem 0 rgba(0, 81, 171, 0.15);
+
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  grid-template-areas:
+    "a a"
+    "b c";
+
+  @media screen and (max-width: 375px) {
+    width: 31.1rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+section {
+  background-color: white;
+  padding: 4rem;
+
+  @media screen and (max-width: 375px) {
+    padding: 2.4rem;
+  }
+}
+
+/** section1 **/
+.section1 {
+  grid-area: a;
+}
+
+.section1-title {
+  color: var(--Deep-Sky-Blue);
+  margin-bottom: 2.4rem;
+}
+
+.section1-sub-title {
+  color: var(--Lime);
+  margin-bottom: 1.1rem;
+
+  @media screen and (max-width: 375px) {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.section1-description {
+  color: var(--Gray);
+  line-height: 2.6rem;
+}
+
+/** section2 **/
+.section2,
+.section3 {
+  color: white;
+  background-color: var(--Deep-Sky-Blue);
+}
+
+.section2-title {
+  margin-bottom: 1.8rem;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.payment-cycle {
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.button-text {
+  background-color: var(--Lime);
+  font-weight: 700;
+  color: inherit;
+  border-radius: 0.5rem;
+  margin-top: 2.6rem;
+  width: 100%;
+  padding: 1.5rem 0;
+  box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+/** section3 **/
+.section3 {
+  background-color: rgba(42, 179, 177, 0.9);
+}
+
+.section3-subscribe {
+  margin-top: 1.8rem;
+}
